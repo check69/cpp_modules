@@ -1,0 +1,2 @@
+D:\Projects\SportsInteractive\modules\c++_modules\Debug\c++_modules.exe
+D:\Projects\SportsInteractive\modules\c++_modules\Debug\c++_modules.pdb

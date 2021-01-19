@@ -36,3 +36,5 @@ Debug/
 *.db-shm
 *.db-wal
 *.opendb
+*.suo
+*.log

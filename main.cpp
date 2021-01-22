@@ -1,7 +1,7 @@
-#include<iostream>
 #include<string_view>
+#include<iostream>
 
-#include "collections_header.hpp"
+import "collections_header.h";
 
 
 std::string_view can_cannot(bool b)
@@ -15,7 +15,7 @@ using namespace Collections;
 void result(Transport::Transport transport, Animal::Animal animal)
 {
 	using namespace Algorithms;
-	std::cout << "A " << to_string(transport) << " " <<
+	std::cout << "a " << to_string(transport) << " " <<
 		can_cannot(can_transport_animal(transport, animal)) <<
 		" transport a " << to_string(animal) << std::endl;
 }

@@ -1,8 +1,9 @@
-#pragma once
+#ifndef __COLLESCIONTS_ALGORITHMS_H__
+#define __COLLESCIONTS_ALGORITHMS_H__
 
 #include <string_view>
-#include "transports.hpp"
-#include "animals.hpp"
+import "transports.h";
+import "animals.h";
 
 
 namespace Collections::Internals
@@ -64,3 +65,5 @@ namespace Collections::Algorithms
 			}, animal);
 	}
 }
+
+#endif

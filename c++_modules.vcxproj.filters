@@ -18,22 +18,20 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="collections_header.hpp">
+    <ClCompile Include="test.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animals.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="collections.hpp">
+    </ClCompile>
+    <ClCompile Include="collections_algorithms.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="animals.hpp">
+    </ClCompile>
+    <ClCompile Include="collections_header.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="transports.hpp">
+    </ClCompile>
+    <ClCompile Include="transports.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="collections_algorithms.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>

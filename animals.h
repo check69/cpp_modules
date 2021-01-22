@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __ANIMALS_H__
+#define __ANIMALS_H__
+
 #include<variant>
 
 namespace Collections::Animal
@@ -9,3 +11,5 @@ namespace Collections::Animal
 
 	using Animal = std::variant<Dog, Cat, Horse>;
 }
+
+#endif

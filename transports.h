@@ -1,7 +1,9 @@
-#pragma once
+#ifndef __TRANSPORT_H__
+#define __TRANSPORT_H__
 
-#include<variant>
-#include "animals.hpp"
+
+import "animals.h";
+
 
 namespace Collections::Transport
 {
@@ -10,3 +12,5 @@ namespace Collections::Transport
 
 	using Transport = std::variant<Car, Plane, Animal::Horse>;
 }
+
+#endif

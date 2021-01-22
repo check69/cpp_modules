@@ -39,3 +39,4 @@ Debug/
 *.suo
 *.log
 *.ipch
+.vs/

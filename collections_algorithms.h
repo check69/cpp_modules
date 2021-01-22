@@ -1,5 +1,5 @@
-#ifndef __COLLESCIONTS_ALGORITHMS_H__
-#define __COLLESCIONTS_ALGORITHMS_H__
+#ifndef __COLLECTIONS_ALGORITHMS_H__
+#define __COLLECTIONS_ALGORITHMS_H__
 
 #include <string_view>
 import "transports.h";

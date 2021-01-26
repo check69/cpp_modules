@@ -1,24 +1,8 @@
-#include<string_view>
-#include<iostream>
+#include<variant>
 
-import "collections_header.h";
-
-
-std::string_view can_cannot(bool b)
-{
-	return b ? "can" : "cannot";
-}
-
+import "collections.h";
 
 using namespace Collections;
-
-void result(Transport::Transport transport, Animal::Animal animal)
-{
-	using namespace Algorithms;
-	std::cout << "a " << to_string(transport) << " " <<
-		can_cannot(can_transport_animal(transport, animal)) <<
-		" transport a " << to_string(animal) << std::endl;
-}
 
 int main()
 {

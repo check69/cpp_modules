@@ -13,21 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="collections">
+      <UniqueIdentifier>{bbcd0b63-4bd1-4e6a-b076-798a936ec820}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test.ixx">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="algorithms.h">
+      <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="animals.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="collections_algorithms.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="collections_header.h">
+    <ClCompile Include="collections.h">
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="transports.h">

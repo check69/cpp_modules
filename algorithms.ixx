@@ -1,26 +1,11 @@
-#ifndef __COLLECTIONS_HEADER_H__
-#define __COLLECTIONS_HEADER_H__
-
-#include<variant>
 #include<string_view>
+#include<variant>
+#include<iostream>
 
-namespace Collections::Animal
-{
-	struct Dog {};
-	struct Cat {};
-	struct Horse {};
+export module collections:algorithms;
 
-	using Animal = std::variant<Dog, Cat, Horse>;
-}
-
-namespace Collections::Transport
-{
-	struct Car {};
-	struct Plane {};
-
-	using Transport = std::variant<Car, Plane, Animal::Horse>;
-}
-
+import :animals;
+import :transports;
 
 namespace Collections::Internals
 {
@@ -34,7 +19,7 @@ namespace Collections::Internals
 	Overloaded(Lambdas...)->Overloaded<Lambdas...>;
 }
 
-namespace Collections::Algorithms
+export namespace Collections::Algorithms
 {
 	using namespace Internals;
 
@@ -82,4 +67,17 @@ namespace Collections::Algorithms
 	}
 }
 
-#endif
+export std::string_view can_cannot(bool b)
+{
+	return b ? "can" : "cannot";
+}
+
+
+export void result(Collections::Transport::Transport transport, Collections::Animal::Animal animal)
+{
+	using namespace Collections;
+	using namespace Algorithms;
+	std::cout << "a " << to_string(transport) << " " <<
+		can_cannot(can_transport_animal(transport, animal)) <<
+		" transport a " << to_string(animal) << std::endl;
+}

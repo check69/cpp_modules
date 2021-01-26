@@ -1,10 +1,11 @@
-#ifndef __COLLECTIONS_ALGORITHMS_H__
-#define __COLLECTIONS_ALGORITHMS_H__
+#pragma once
 
-#include <string_view>
-import "transports.h";
+#include<string_view>
+#include<variant>
+#include<iostream>
+
 import "animals.h";
-
+import "transports.h";
 
 namespace Collections::Internals
 {
@@ -18,7 +19,7 @@ namespace Collections::Internals
 	Overloaded(Lambdas...)->Overloaded<Lambdas...>;
 }
 
-namespace Collections::Algorithms
+export namespace Collections::Algorithms
 {
 	using namespace Internals;
 
@@ -66,4 +67,17 @@ namespace Collections::Algorithms
 	}
 }
 
-#endif
+export std::string_view can_cannot(bool b)
+{
+	return b ? "can" : "cannot";
+}
+
+
+export void result(Collections::Transport::Transport transport, Collections::Animal::Animal animal)
+{
+	using namespace Collections;
+	using namespace Algorithms;
+	std::cout << "a " << to_string(transport) << " " <<
+		can_cannot(can_transport_animal(transport, animal)) <<
+		" transport a " << to_string(animal) << std::endl;
+}

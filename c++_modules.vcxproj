@@ -146,25 +146,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="test.ixx" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="collections_header.h">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</CompileAs>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="animals.h">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</CompileAs>
-    </ClCompile>
-    <ClCompile Include="collections_algorithms.h">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</CompileAs>
-    </ClCompile>
-    <ClCompile Include="transports.h">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</CompileAs>
-      <GenerateModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateModuleDependencies>
-      <UseFullPaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</UseFullPaths>
-    </ClCompile>
+    <ClCompile Include="algorithms.h" />
+    <ClCompile Include="animals.h" />
+    <ClCompile Include="collections.h" />
+    <ClCompile Include="transports.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

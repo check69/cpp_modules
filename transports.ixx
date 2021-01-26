@@ -1,9 +1,8 @@
-#pragma once
-
 #include<variant>
 
+export module collections:transports;
 
-import "animals.h";
+import :animals;
 
 export namespace Collections::Transport
 {

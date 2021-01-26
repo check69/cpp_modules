@@ -1,6 +1,6 @@
-#pragma once
-
 #include<variant>
+
+export module collections:animals;
 
 export namespace Collections::Animal
 {

@@ -145,13 +145,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="algorithms.ixx" />
+    <ClCompile Include="animals.ixx" />
+    <ClCompile Include="collections.ixx" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="transports.ixx" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="algorithms.h" />
-    <ClCompile Include="animals.h" />
-    <ClCompile Include="collections.h" />
-    <ClCompile Include="transports.h" />
+    <ClCompile Include="algorithms2.h" />
+    <ClCompile Include="animals2.h" />
+    <ClCompile Include="collections2.h" />
+    <ClCompile Include="transports2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

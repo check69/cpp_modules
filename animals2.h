@@ -2,7 +2,7 @@
 
 #include<variant>
 
-export namespace Collections::Animal
+export namespace Collections::Animal2
 {
 	struct Dog {};
 	struct Cat {};

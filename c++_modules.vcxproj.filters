@@ -21,16 +21,28 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="algorithms.h">
+    <ClCompile Include="algorithms.ixx">
+      <Filter>collections</Filter>
+    </ClCompile>
+    <ClCompile Include="animals.ixx">
+      <Filter>collections</Filter>
+    </ClCompile>
+    <ClCompile Include="collections.ixx">
+      <Filter>collections</Filter>
+    </ClCompile>
+    <ClCompile Include="transports.ixx">
+      <Filter>collections</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms2.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="animals.h">
+    <ClCompile Include="animals2.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="collections.h">
+    <ClCompile Include="collections2.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="transports.h">
+    <ClCompile Include="transports2.h">
       <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>

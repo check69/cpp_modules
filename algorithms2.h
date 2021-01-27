@@ -4,8 +4,8 @@
 #include<variant>
 #include<iostream>
 
-import "animals.h";
-import "transports.h";
+import "animals2.h";
+import "transports2.h";
 
 namespace Collections::Internals
 {
@@ -19,15 +19,15 @@ namespace Collections::Internals
 	Overloaded(Lambdas...)->Overloaded<Lambdas...>;
 }
 
-export namespace Collections::Algorithms
+namespace Collections::Algorithms2
 {
 	using namespace Internals;
 
-	inline bool can_transport_animal(const Transport::Transport& transport,
-		const Animal::Animal& animal)
+	inline bool can_transport_animal(const Transport2::Transport& transport,
+		const Animal2::Animal& animal)
 	{
-		using namespace Transport;
-		using namespace Animal;
+		using namespace Transport2;
+		using namespace Animal2;
 
 		return std::visit(Overloaded
 			{
@@ -39,10 +39,10 @@ export namespace Collections::Algorithms
 			transport, animal);
 	}
 
-	inline std::string_view to_string(const Transport::Transport& transport)
+	inline std::string_view to_string(const Transport2::Transport& transport)
 	{
-		using namespace Transport;
-		using namespace Animal;
+		using namespace Transport2;
+		using namespace Animal2;
 
 		return std::visit(Overloaded
 			{
@@ -53,9 +53,9 @@ export namespace Collections::Algorithms
 			}, transport);
 	}
 
-	inline std::string_view to_string(const Animal::Animal& animal)
+	inline std::string_view to_string(const Animal2::Animal& animal)
 	{
-		using namespace Animal;
+		using namespace Animal2;
 
 		return std::visit(Overloaded
 			{
@@ -67,16 +67,15 @@ export namespace Collections::Algorithms
 	}
 }
 
-export std::string_view can_cannot(bool b)
+std::string_view can_cannot(bool b)
 {
 	return b ? "can" : "cannot";
 }
 
 
-export void result(Collections::Transport::Transport transport, Collections::Animal::Animal animal)
+void result2(Collections::Transport2::Transport transport, Collections::Animal2::Animal animal)
 {
-	using namespace Collections;
-	using namespace Algorithms;
+	using namespace Collections::Algorithms2;
 	std::cout << "a " << to_string(transport) << " " <<
 		can_cannot(can_transport_animal(transport, animal)) <<
 		" transport a " << to_string(animal) << std::endl;
